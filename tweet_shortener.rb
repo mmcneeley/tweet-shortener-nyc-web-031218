@@ -17,7 +17,7 @@ end
 
 def word_substituter(tweet)
   puts tweet
-  tweet_array = tweet.split
+  tweet_array = tweet.to_s.split
   puts tweet_array.inspect
   tweet_array.map do |word|
      if dictionary.keys.to_s.include?(word)
