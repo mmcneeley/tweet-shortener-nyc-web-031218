@@ -34,6 +34,6 @@ def bulk_tweet_shortener(tweet)
     tweet
   else
     #puts "oh shit, bigger than 140"
-    word_substituter(tweet)
+    word_substituter(tweet.to_s)
   end
 end
