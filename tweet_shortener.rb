@@ -18,7 +18,7 @@ end
 def word_substituter(tweet)
   puts "#{tweet.class} is the class"
   puts "#{tweet.length} is the length"
-  tweet_array = tweet.to_s.split
+  tweet_array = tweet.split
   puts "#{tweet_array.inspect} is the new array"
   tweet_array.map do |word|
      if dictionary.keys.to_s.include?(word)
@@ -31,7 +31,7 @@ end
 
 def bulk_tweet_shortener(tweet)
   if tweet.length > 140
-    puts word_substituter(tweet.join(" "))
+    puts word_substituter(tweet)
   end
     puts tweet
 end
