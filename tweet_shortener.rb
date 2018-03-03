@@ -16,10 +16,10 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  puts "#{tweet.class} is the class"
-  puts "#{tweet.length} is the length"
+  #puts "#{tweet.class} is the class"
+  #puts "#{tweet.length} is the length"
   tweet_array = tweet.split
-  puts "#{tweet_array.inspect} is the new array"
+  #puts "#{tweet_array.inspect} is the new array"
   tweet_array.map do |word|
      if dictionary.keys.to_s.include?(word)
       dictionary[word.to_sym]
