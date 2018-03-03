@@ -16,6 +16,7 @@ def dictionary
 end
 
 def word_substituter(tweet)
+  puts tweet
   tweet_array = tweet.split
   puts tweet_array.inspect
   tweet_array.map do |word|
@@ -34,6 +35,6 @@ def bulk_tweet_shortener(tweet)
     tweet
   else
     #puts "oh shit, bigger than 140"
-    word_substituter(tweet.to_s)
+    word_substituter(tweet)
   end
 end
