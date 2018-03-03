@@ -33,7 +33,7 @@ def bulk_tweet_shortener(tweets)
 end
 
 def selective_tweet_shortener(tweet)
-  tweet.select do |t|
+  tweet.collect do |t|
     if tweet.length > 140
-  end.bulk_tweet_shortener(tweet)
+  end.bulk_tweet_shortener
 end
