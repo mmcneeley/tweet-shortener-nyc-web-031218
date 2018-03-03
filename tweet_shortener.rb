@@ -20,10 +20,10 @@ def word_substituter(tweet)
   puts tweet_array.inspect
   tweet_array.map do |word|
      if dictionary.keys.to_s.include?(word)
-      #puts "woopee"
+      puts "woopee"
       puts dictionary[:word]
      else
-       #puts "weee"
+       puts "weee"
       word
      end
    end.join(" ")
