@@ -22,7 +22,7 @@ def word_substituter(tweet)
   #puts "#{tweet_array.inspect} is the new array"
   tweet_array.map do |word|
      if dictionary.keys.to_s.include?(word.downcase)
-      dictionary[word.to_sym.downcase]
+      word = dictionary[word.to_sym.downcase]
      else
       word
      end
