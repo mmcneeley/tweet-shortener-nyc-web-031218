@@ -30,8 +30,14 @@ def word_substituter(tweet)
 end
 
 def bulk_tweet_shortener(tweet)
-  if tweet.length > 140
-    puts word_substituter(tweet)
+  tweet.each do |tweet|
+    word_substituter(tweet)
   end
-    puts tweet
 end
+
+#def bulk_tweet_shortener(tweet)
+#  if tweet.length > 140
+#    puts word_substituter(tweet)
+#  end
+#    puts tweet
+#end
