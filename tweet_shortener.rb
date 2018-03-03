@@ -15,18 +15,24 @@ def dictionary
   }
 end
 
+#def word_substituter(tweet)
+#  tweet_array = tweet.split
+#  tweet_array.map do |word|
+#     if dictionary.keys.to_s.include?(word.downcase)
+#      word = dictionary[word.downcase]
+#     else
+#      word
+#     end
+#   end.join(" ")
+#end
 def word_substituter(tweet)
-  #puts "#{tweet.class} is the class"
-  #puts "#{tweet.length} is the length"
-  tweet_array = tweet.split
-  #puts "#{tweet_array.inspect} is the new array"
-  tweet_array.map do |word|
-     if dictionary.keys.to_s.include?(word.downcase)
+  tweet.split.collect do |word|
+    if dictionary.keys.include?(word.downcase)
       word = dictionary[word.downcase]
-     else
+    else
       word
-     end
-   end.join(" ")
+    end
+  end.join(" ")
 end
 
 def bulk_tweet_shortener(tweets)
