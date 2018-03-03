@@ -21,7 +21,7 @@ def word_substituter(tweet)
   tweet_array.map do |word|
      if dictionary.keys.to_s.include?(word)
       #puts "woopee"
-      dictionary[:word]
+      puts dictionary[:word]
      else
        #puts "weee"
       word
