@@ -29,14 +29,7 @@ def word_substituter(tweet)
 end
 
 def bulk_tweet_shortener(tweet)
-  puts "hey, this is a test"
-#  puts tweet
-#  #puts tweet.inspect
-#  if tweet.length > 140
-#    #puts "less than 140"
-#    tweet
-#  else
-    #puts "oh shit, bigger than 140"
-#    word_substituter(tweet)
-#  end
+  if tweet.length > 140
+    word_substituter(tweet)
+  end
 end
