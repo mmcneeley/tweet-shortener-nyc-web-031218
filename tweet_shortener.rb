@@ -16,7 +16,7 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  puts tweet.length
+  puts tweet.class
   tweet_array = tweet.to_s.split
   puts tweet_array.inspect
   tweet_array.map do |word|
