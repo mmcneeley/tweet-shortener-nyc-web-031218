@@ -31,7 +31,7 @@ end
 
 def bulk_tweet_shortener(tweet)
   if tweet.length > 140
-    puts word_substituter(tweet).join(" ")
+    puts word_substituter(tweet.join(" "))
   end
     puts tweet
 end
