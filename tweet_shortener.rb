@@ -41,5 +41,5 @@ def selective_tweet_shortener(tweet)
 end
 
 def shortened_tweet_truncator(tweet)
-  puts = "#{tweet}.[0...136]..."
+  tweet = "#{tweet}.[0...136]..."
 end
